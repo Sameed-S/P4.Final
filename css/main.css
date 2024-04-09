@@ -1,0 +1,102 @@
+/*DEVELOPER: Muhammad (Sameed) Shoaib, IS117-102, Spring, 2024 */
+
+/* main.css */
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: url('../font/Formula1-Italic.ttf') format('truetype');
+}
+body {
+    font-family: 'Formula1-Regular', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ff1801 !important; /* Formula 1 Red */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff !important; /* White */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White */
+}
+
+.navbar-toggler {
+    border-color: #fff; /* White */
+}
+
+.navbar-toggler:hover {
+    background-color: #fff; /* White */
+}
+
+.nav-link:hover {
+    color: #fff !important; /* White */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #ff1801; /* F1 Red */
+    border-color: #ff1801; /* F1 Red */
+}
+
+.btn-primary:hover {
+    background-color: #e60000; /* Darker shade of F1 Red */
+    border-color: #e60000; /* Darker shade of F1 Red */
+}
+
+/* Form styles */
+.form-control {
+    background-color: #fff; /* White */
+    color: #000; /* Black */
+}
+
+/* Checkbox styles */
+.form-check-input:checked {
+    background-color: #ff1801; /* F1 Red */
+    border-color: #ff1801; /* F1 Red */
+}
+
+ .team-box {
+     border: 1px solid #ccc;
+     padding: 20px;
+     margin-bottom: 20px;
+ }
+.driver-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Style for form-check inputs and labels */
+.form-check-input {
+    margin-right: 10px;
+}
+     /* Additional CSS for team images */
+ .team-image {
+     max-width: 100%;
+     height: auto;
+ }
+ .dropdown:hover .dropdown-menu {
+     display: block;
+ }
+
+/* Style for the submit button */
+.btn-primary {
+    margin-top: 10px;
+}
+/* Footer styles */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000; /* Black */
+    color: #fff; /* White */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem; /* Increased font size for better readability */
+}

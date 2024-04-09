@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Driver Vote</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Formula 1</a>
+
+        <!-- Responsive Button for the smaller menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Links -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=racecalender.html id="navbarDropdownRace" >
+                        Race
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownRace">
+                        <li><a class="dropdown-item" href="racecalender.html">Calendar</a></li>
+                        <li><a class="dropdown-item" href="raceresult.html">Results</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="teamprofiles.html" id="navbarDropdownTeam">
+                        Team
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownTeam">
+                        <li><a class="dropdown-item" href="teamprofiles.html">Profiles</a></li>
+                        <li><a class="dropdown-item" href="driverprofiles.html">Driver Profiles</a></li>
+                        <li><a class="dropdown-item" href="drivervote.html">Best Driver Vote</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h1 class="mt-5 mb-4">Formula 1 Driver Vote</h1>
+    <form id="driver-vote-form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver1" value="Max Verstappen">
+                        <label class="form-check-label" for="driver1">Max Verstappen</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver2" value="Charles Leclerc">
+                        <label class="form-check-label" for="driver2">Charles Leclerc</label>
+                    </div>
+                    <!-- Add more drivers here -->
+                    <!-- 3. Sergio Perez -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver3" value="Sergio Perez">
+                        <label class="form-check-label" for="driver3">Sergio Perez</label>
+                    </div>
+                    <!-- 4. Carlos Sainz -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver4" value="Carlos Sainz">
+                        <label class="form-check-label" for="driver4">Carlos Sainz</label>
+                    </div>
+                    <!-- 5. Oscar Piastri -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver5" value="Oscar Piastri">
+                        <label class="form-check-label" for="driver5">Oscar Piastri</label>
+                    </div>
+                    <!-- 6. Lando Norris -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver6" value="Lando Norris">
+                        <label class="form-check-label" for="driver6">Lando Norris</label>
+                    </div>
+                    <!-- 7. George Russell -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver7" value="George Russell">
+                        <label class="form-check-label" for="driver7">George Russell</label>
+                    </div>
+                    <!-- 8. Fernando Alonso -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver8" value="Fernando Alonso">
+                        <label class="form-check-label" for="driver8">Fernando Alonso</label>
+                    </div>
+                    <!-- 9. Lance Stroll -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver9" value="Lance Stroll">
+                        <label class="form-check-label" for="driver9">Lance Stroll</label>
+                    </div>
+                    <!-- 10. Lewis Hamilton -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver10" value="Lewis Hamilton">
+                        <label class="form-check-label" for="driver10">Lewis Hamilton</label>
+                    </div>
+                    <!-- 11. Yuki Tsunoda -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver11" value="Yuki Tsunoda">
+                        <label class="form-check-label" for="driver11">Yuki Tsunoda</label>
+                    </div>
+                    <!-- 12. Oliver Bearman -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver12" value="Oliver Bearman">
+                        <label class="form-check-label" for="driver12">Oliver Bearman</label>
+                    </div>
+                    <!-- 13. Nico Hulkenberg -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver13" value="Nico Hulkenberg">
+                        <label class="form-check-label" for="driver13">Nico Hulkenberg</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <!-- 14. Kevin Magnussen -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver14" value="Kevin Magnussen">
+                        <label class="form-check-label" for="driver14">Kevin Magnussen</label>
+                    </div>
+                    <!-- 15. Alexander Albon -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver15" value="Alexander Albon">
+                        <label class="form-check-label" for="driver15">Alexander Albon</label>
+                    </div>
+                    <!-- 16. Guanyu Zhou -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver16" value="Guanyu Zhou">
+                        <label class="form-check-label" for="driver16">Guanyu Zhou</label>
+                    </div>
+                    <!-- 17. Daniel Ricciardo -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver17" value="Daniel Ricciardo">
+                        <label class="form-check-label" for="driver17">Daniel Ricciardo</label>
+                    </div>
+                    <!-- 18. Esteban Ocon -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver18" value="Esteban Ocon">
+                        <label class="form-check-label" for="driver18">Esteban Ocon</label>
+                    </div>
+                    <!-- 19. Pierre Gasly -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver19" value="Pierre Gasly">
+                        <label class="form-check-label" for="driver19">Pierre Gasly</label>
+                    </div>
+                    <!-- 20. Valtteri Bottas -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver20" value="Valtteri Bottas">
+                        <label class="form-check-label" for="driver20">Valtteri Bottas</label>
+                    </div>
+                    <!-- 21. Logan Sargeant -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="driver" id="driver21" value="Logan Sargeant">
+                        <label class="form-check-label" for="driver21">Logan Sargeant</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit Vote</button>
+    </form>
+</div>
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

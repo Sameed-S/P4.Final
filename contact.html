@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Information Website</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Formula 1</a>
+
+        <!-- Responsive Button for the smaller menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Links -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=racecalender.html id="navbarDropdownRace" >
+                        Race
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownRace">
+                        <li><a class="dropdown-item" href="racecalender.html">Calendar</a></li>
+                        <li><a class="dropdown-item" href="raceresult.html">Results</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="teamprofiles.html" id="navbarDropdownTeam">
+                        Team
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownTeam">
+                        <li><a class="dropdown-item" href="teamprofiles.html">Profiles</a></li>
+                        <li><a class="dropdown-item" href="driverprofiles.html">Driver Profiles</a></li>
+                        <li><a class="dropdown-item" href="drivervote.html">Best Driver Vote</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row">
+        <!-- About me section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">About Me</h2>
+                    <p class="card-text">I am a Formula 1 enthusiast and have been following the sport for many years. I am passionate about the technology, strategy, and excitement that Formula 1 brings to the world of motorsport.</p>
+                    <!-- Links to GitHub and LinkedIn -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Connect with Me</h5>
+                            <a href="https://www.github.com/yourgithubusername" class="card-link" target="_blank">
+                                <img src= "media/linkedin.png" alt="GitHub" width="30" height="30"> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/yourlinkedinusername" class="card-link" target="_blank">
+                                <img src= "media/github.png" alt="LinkedIn" width="30" height="30"> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact form -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Contact Me</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" class="form-control" id="firstname"
+                                   placeholder="First name" name="firstname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control" id="lastname"
+                                   placeholder="Last name" name="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email"
+                                   placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer page-footer font-small">
+    <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+    </div>
+</footer>
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

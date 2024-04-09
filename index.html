@@ -1,0 +1,158 @@
+<!-- DEVELOPER: Muhammad (Sameed) Shoaib, IS117-102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Information Website</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Formula 1</a>
+
+        <!-- Responsive Button for the smaller menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Links -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=racecalender.html id="navbarDropdownRace" >
+                        Race
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownRace">
+                        <li><a class="dropdown-item" href="racecalender.html">Calendar</a></li>
+                        <li><a class="dropdown-item" href="raceresult.html">Results</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="teamprofiles.html" id="navbarDropdownTeam">
+                        Team
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownTeam">
+                        <li><a class="dropdown-item" href="teamprofiles.html">Profiles</a></li>
+                        <li><a class="dropdown-item" href="driverprofiles.html">Driver Profiles</a></li>
+                        <li><a class="dropdown-item" href="drivervote.html">Best Driver Vote</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="media/image4.jpg" class="d-block w-100" alt="Banner Image">
+            </div>
+            <div class="carousel-item">
+                <img src="media/image1.avif" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="media/image2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body text-center">
+
+            <h1>Welcome to Formula 1 Information Website</h1>
+            <p>Get the latest updates on Formula 1 races, team profiles, standings, and more!</p>
+            <a href="teamprofiles.html" class="btn btn-primary">Learn More</a>
+        </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-md-30">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Driver Intro</h5>
+                            <video controls style="max-width: 100%;">
+                                <source src="media/video1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <span class="text-muted">&copy; F1 Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Latest Race Highlight - Australia 2024</h5>
+                            <video controls style="max-width: 100%;">
+                                <source src="media/video2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <span class="text-muted">&copy; F1 Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <div class="card">
+            <h5 class="card-title">Current Team Principals</h5>
+            <img src="media/image3.webp" class="card-img-top" alt="Current Team Principals" style="max-width: 100%;">
+        </div>
+    </div>
+        </div>
+
+
+        <div class="row justify-content-center mt-4">
+        <footer class="footer page-footer font-small col-md-6">
+            <div class="container">
+                <div class="row">
+                    <span class="text-muted">&copy; Muhamamd (Sameed) Shoaib, 2024 | Terms Of Use | Privacy Statement</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
