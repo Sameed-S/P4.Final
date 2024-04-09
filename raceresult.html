@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Race Results</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Formula 1</a>
+
+        <!-- Responsive Button for the smaller menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Links -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=racecalender.html id="navbarDropdownRace" >
+                        Race
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownRace">
+                        <li><a class="dropdown-item" href="racecalender.html">Calendar</a></li>
+                        <li><a class="dropdown-item" href="raceresult.html">Results</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="teamprofiles.html" id="navbarDropdownTeam">
+                        Team
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownTeam">
+                        <li><a class="dropdown-item" href="teamprofiles.html">Profiles</a></li>
+                        <li><a class="dropdown-item" href="driverprofiles.html">Driver Profiles</a></li>
+                        <li><a class="dropdown-item" href="drivervote.html">Best Driver Vote</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="standings.html">Standings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-primary mb-3" onclick="showBahrainResults()">Bahrain</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary mb-3" onclick="showSaudiArabiaResults()">Saudi Arabia</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary mb-3" onclick="showAustraliaResults()">Australia</button>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4" id="raceResults">
+    <!-- Results will be displayed here -->
+</div>
+
+<!-- Javascript only -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script>
+    // Function to display Bahrain race results
+    function showBahrainResults() {
+        document.getElementById("raceResults").innerHTML = `
+        <h2>Bahrain Grand Prix Results</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>POS</th>
+                <th>NO</th>
+                <th>DRIVER</th>
+                <th>CAR</th>
+                <th>LAPS</th>
+                <th>TIME/RETIRED</th>
+                <th>PTS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Max Verstappen</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>57</td>
+                <td>1:31:44.742</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>11</td>
+                <td>Sergio Perez</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>57</td>
+                <td>+22.457s</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>55</td>
+                <td>Carlos Sainz</td>
+                <td>FERRARI</td>
+                <td>57</td>
+                <td>+25.110s</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>16</td>
+                <td>Charles Leclerc</td>
+                <td>FERRARI</td>
+                <td>57</td>
+                <td>+39.669s</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>63</td>
+                <td>George Russell</td>
+                <td>MERCEDES</td>
+                <td>57</td>
+                <td>+46.788s</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>4</td>
+                <td>Lando Norris</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>57</td>
+                <td>+48.458s</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>44</td>
+                <td>Lewis Hamilton</td>
+                <td>MERCEDES</td>
+                <td>57</td>
+                <td>+50.324s</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>81</td>
+                <td>Oscar Piastri</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>57</td>
+                <td>+56.082s</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>14</td>
+                <td>Fernando Alonso</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>57</td>
+                <td>+74.887s</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>18</td>
+                <td>Lance Stroll</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>57</td>
+                <td>+93.216s</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>24</td>
+                <td>Zhou Guanyu</td>
+                <td>KICK SAUBER FERRARI</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>20</td>
+                <td>Kevin Magnussen</td>
+                <td>HAAS FERRARI</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>3</td>
+                <td>Daniel Ricciardo</td>
+                <td>RB HONDA RBPT</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>22</td>
+                <td>Yuki Tsunoda</td>
+                <td>RB HONDA RBPT</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>23</td>
+                <td>Alexander Albon</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>27</td>
+                <td>Nico Hulkenberg</td>
+                <td>HAAS FERRARI</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>31</td>
+                <td>Esteban Ocon</td>
+                <td>ALPINE RENAULT</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>10</td>
+                <td>Pierre Gasly</td>
+                <td>ALPINE RENAULT</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>77</td>
+                <td>Valtteri Bottas</td>
+                <td>KICK SAUBER FERRARI</td>
+                <td>56</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>2</td>
+                <td>Logan Sargeant</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>55</td>
+                <td>+2 laps</td>
+                <td>0</td>
+            </tr>
+            </tbody>
+        </table>
+        `;
+    }
+
+    // Function to display Saudi Arabia race results
+    function showSaudiArabiaResults() {
+        document.getElementById("raceResults").innerHTML = `
+        <h2>Saudi Arabia Grand Prix Results</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>POS</th>
+                <th>NO</th>
+                <th>DRIVER</th>
+                <th>CAR</th>
+                <th>LAPS</th>
+                <th>TIME/RETIRED</th>
+                <th>PTS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Max Verstappen</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>50</td>
+                <td>1:20:43.273</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>11</td>
+                <td>Sergio Perez</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>50</td>
+                <td>+13.643s</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>16</td>
+                <td>Charles Leclerc</td>
+                <td>FERRARI</td>
+                <td>50</td>
+                <td>+18.639s</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>81</td>
+                <td>Oscar Piastri</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>50</td>
+                <td>+32.007s</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>14</td>
+                <td>Fernando Alonso</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>50</td>
+                <td>+35.759s</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>63</td>
+                <td>George Russell</td>
+                <td>MERCEDES</td>
+                <td>50</td>
+                <td>+39.936s</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>38</td>
+                <td>Oliver Bearman</td>
+                <td>FERRARI</td>
+                <td>50</td>
+                <td>+42.679s</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>4</td>
+                <td>Lando Norris</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>50</td>
+                <td>+45.708s</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>44</td>
+                <td>Lewis Hamilton</td>
+                <td>MERCEDES</td>
+                <td>50</td>
+                <td>+47.391s</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>27</td>
+                <td>Nico Hulkenberg</td>
+                <td>HAAS FERRARI</td>
+                <td>50</td>
+                <td>+76.996s</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>23</td>
+                <td>Alexander Albon</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>50</td>
+                <td>+88.354s</td>
+                <td>0</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>20</td>
+                <td>Kevin Magnussen</td>
+                <td>HAAS FERRARI</td>
+                <td>50</td>
+                <td>+105.737s</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>31</td>
+                <td>Esteban Ocon</td>
+                <td>ALPINE RENAULT</td>
+                <td>49</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>2</td>
+                <td>Logan Sargeant</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>49</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+             <tr>
+                <td>15</td>
+                <td>22</td>
+                <td>Yuki Tsunoda</td>
+                <td>RB HONDA RBPT</td>
+                <td>49</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>3</td>
+                <td>Daniel Ricciardo</td>
+                <td>RB HONDA RBPT</td>
+                <td>49</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>77</td>
+                <td>Valtteri Bottas</td>
+                <td>KICK SAUBER FERRARI</td>
+                <td>49</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>24</td>
+                <td>Zhou Guanyu</td>
+                <td>KICK SAUBER FERRARI</td>
+                <td>49</td>
+                <td>+1 lap</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>DNF</td>
+                <td>18</td>
+                <td>Lance Stroll</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>5</td>
+                <td>DNF</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>DNF</td>
+                <td>10</td>
+                <td>Pierre Gasly</td>
+                <td>ALPINE RENAULT</td>
+                <td>1</td>
+                <td>DNF</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td colspan="7">...</td>
+            </tr>
+            </tbody>
+        </table>
+        `;
+    }
+
+    // Function to display Australia race results
+    function showAustraliaResults() {
+        document.getElementById("raceResults").innerHTML = `
+        <h2>Australia Grand Prix Results</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>POS</th>
+                <th>NO</th>
+                <th>DRIVER</th>
+                <th>CAR</th>
+                <th>LAPS</th>
+                <th>TIME/RETIRED</th>
+                <th>PTS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>55</td>
+                <td>Carlos Sainz</td>
+                <td>FERRARI</td>
+                <td>58</td>
+                <td>1:20:26.843</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>16</td>
+                <td>Charles Leclerc</td>
+                <td>FERRARI</td>
+                <td>58</td>
+                <td>+2.366s</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>Lando Norris</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>58</td>
+                <td>+5.904s</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>81</td>
+                <td>Oscar Piastri</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>58</td>
+                <td>+35.770s</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>11</td>
+                <td>Sergio Perez</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>58</td>
+                <td>+56.309s</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>18</td>
+                <td>Lance Stroll</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>58</td>
+                <td>+93.222s</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>22</td>
+                <td>Yuki Tsunoda</td>
+                <td>RB HONDA RBPT</td>
+                <td>58</td>
+                <td>+95.601s</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>14</td>
+                <td>Fernando Alonso</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>58</td>
+                <td>+100.992s</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>27</td>
+                <td>Nico Hulkenberg</td>
+                <td>HAAS FERRARI</td>
+                <td>58</td>
+                <td>+104.553s</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>20</td>
+                <td>Kevin Magnussen</td>
+                <td>HAAS FERRARI</td>
+                <td>57</td>
+                <td>+1 lap</td>
+                <td>1</td>
+            </tr>
+            <tr>
+            <td>11</td>
+            <td>23</td>
+            <td>Alexander Albon</td>
+            <td>WILLIAMS MERCEDES</td>
+            <td>57</td>
+            <td>+1 lap</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>3</td>
+            <td>Daniel Ricciardo</td>
+            <td>RB HONDA RBPT</td>
+            <td>57</td>
+            <td>+1 lap</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>10</td>
+            <td>Pierre Gasly</td>
+            <td>ALPINE RENAULT</td>
+            <td>57</td>
+            <td>+1 lap</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>77</td>
+            <td>Valtteri Bottas</td>
+            <td>KICK SAUBER FERRARI</td>
+            <td>57</td>
+            <td>+1 lap</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>24</td>
+            <td>Zhou Guanyu</td>
+            <td>KICK SAUBER FERRARI</td>
+            <td>57</td>
+            <td>+1 lap</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>31</td>
+            <td>Esteban Ocon</td>
+            <td>ALPINE RENAULT</td>
+            <td>57</td>
+            <td>+1 lap</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>63</td>
+            <td>George Russell</td>
+            <td>MERCEDES</td>
+            <td>56</td>
+            <td>DNF</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>NC</td>
+            <td>44</td>
+            <td>Lewis Hamilton</td>
+            <td>MERCEDES</td>
+            <td>15</td>
+            <td>DNF</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>NC</td>
+            <td>1</td>
+            <td>Max Verstappen</td>
+            <td>RED BULL RACING HONDA RBPT</td>
+            <td>3</td>
+            <td>DNF</td>
+            <td>0</td>
+        </tr>
+            <tr>
+                <td colspan="7">...</td>
+            </tr>
+            </tbody>
+        </table>
+        `;
+    }
+</script>
+
+</body>
+</html>
