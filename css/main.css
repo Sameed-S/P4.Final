@@ -7,7 +7,13 @@
 }
 body {
     font-family: 'Formula1-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
+
+
 
 /* Navbar styles */
 .navbar {
@@ -90,13 +96,20 @@ body {
 }
 /* Footer styles */
 .footer {
-    position: fixed;
+    margin-top: auto;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #000; /* Black */
-    color: #fff; /* White */
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    font-size: 0.9rem; /* Increased font size for better readability */
+    padding: 10px 0;
+    font-size: 0.9rem;
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
